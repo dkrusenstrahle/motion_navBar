@@ -14,6 +14,7 @@ class SecondController < UIViewController
     # Set the main view attributes
 
     self.title = "Second"
+    
     view.backgroundColor = UIColor.whiteColor 
 
     # Create the images

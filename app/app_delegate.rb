@@ -7,11 +7,11 @@ class AppDelegate
 
     # Create the main controller
 
-    firstController = FirstController.alloc.initWithNibName(nil, bundle: nil)
+    firstViewController = FirstController.alloc.initWithNibName(nil, bundle: nil)
 
     # Create the navbar controller
 
-    navbarController = UINavigationController.alloc.initWithRootViewController(firstController)
+    navbarController = UINavigationController.alloc.initWithRootViewController(firstViewController)
 
     # Style the navigation bar
 

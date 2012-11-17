@@ -14,19 +14,13 @@ class FirstController < UIViewController
     # Set main view attributes
 
     self.title = "First"
+
     view.backgroundColor = UIColor.whiteColor 
 
     # Create images
 
-    selected = UIImage.imageNamed('tabbar-activity-selected.png')
-    unselected = UIImage.imageNamed('tabbar-activity-selected.png')
-    checkInImage = UIImage.imageNamed('nav-button.png')
-    checkInPressed = UIImage.imageNamed('nav-button-green.png')
-
-    # Style tabBar item
-
-    self.tabBarItem = UITabBarItem.alloc.initWithTitle('First', image: nil, tag: 0)
-    self.tabBarItem.setFinishedSelectedImage(selected, withFinishedUnselectedImage: unselected)
+    buttonNormal = UIImage.imageNamed('nav-button.png')
+    buttonSelected = UIImage.imageNamed('nav-button-green.png')
 
     # Create button 
 
@@ -34,8 +28,8 @@ class FirstController < UIViewController
     button.title = 'Add'
     button.target = self
     button.action = 'performAdd'
-    button.setBackgroundImage(checkInImage, forState:UIControlStateNormal, barMetrics:UIBarMetricsDefault)
-    button.setBackgroundImage(checkInPressed, forState:UIControlStateHighlighted, barMetrics:UIBarMetricsDefault)
+    button.setBackgroundImage(buttonNormal, forState:UIControlStateNormal, barMetrics:UIBarMetricsDefault)
+    button.setBackgroundImage(buttonSelected, forState:UIControlStateHighlighted, barMetrics:UIBarMetricsDefault)
 
     # Add button to navigation controller
 
@@ -49,7 +43,7 @@ class FirstController < UIViewController
     controller = SecondController.alloc.init
 
     # Open the controller page
-    
+
     self.navigationController.pushViewController(controller, animated:true)
   end
 end
