@@ -1,6 +1,10 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
 
+    # Set status bar color to black
+
+    application.setStatusBarStyle(UIStatusBarStyleBlackOpaque, animated:false)
+
     # Create the main controller
 
     firstController = FirstController.alloc.initWithNibName(nil, bundle: nil)
