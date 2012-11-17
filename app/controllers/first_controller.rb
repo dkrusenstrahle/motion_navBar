@@ -1,7 +1,7 @@
 class FirstController < UIViewController
   def initWithNibName(name, bundle: bundle)
     super
-    customize
+    add_elements
     self
   end
 
@@ -9,11 +9,13 @@ class FirstController < UIViewController
     super
   end
 
-  def customize
+  def add_elements
 
-    # Set main view attributes
+    # Set views title in the navigationBar
 
     self.title = "First"
+
+    # Set the window background color
 
     view.backgroundColor = UIColor.whiteColor 
 
