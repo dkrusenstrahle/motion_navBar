@@ -21,8 +21,8 @@ class FirstController < UIViewController
 
     # Create images
 
-    buttonNormal = UIImage.imageNamed('nav-button.png')
-    buttonSelected = UIImage.imageNamed('nav-button-green.png')
+    buttonNormal = UIImage.imageNamed('navbar_images/button.png')
+    buttonSelected = UIImage.imageNamed('navbar_images/button.png')
 
     # Create button 
 

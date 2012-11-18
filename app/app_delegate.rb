@@ -15,9 +15,13 @@ class AppDelegate
 
     # Style the navigation bar
 
-    backgroundImage = UIImage.imageNamed('navigationbar.png') 
+    backgroundImage = UIImage.imageNamed('navbar_images/background_navbar.png')
 
     navbarController.navigationBar.setBackgroundImage(backgroundImage, forBarMetrics:UIBarMetricsDefault)
+    navbarController.navigationBar.setTitleTextAttributes({
+      UITextAttributeFont => UIFont.fontWithName('Futura-Medium', size:17),
+      UITextAttributeTextShadowColor => UIColor.colorWithWhite(0.0, alpha:0.4)
+    })
 
     # Create the main window
 

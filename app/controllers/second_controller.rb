@@ -24,8 +24,8 @@ class SecondController < UIViewController
     tabNormal = UIImage.imageNamed('tabbar-activity-selected.png')
     tabSelected = UIImage.imageNamed('tabbar-activity-selected.png')
 
-    backButtonNormal = UIImage.imageNamed('nav-backbutton.png').stretchableImageWithLeftCapWidth(14, topCapHeight:0)
-    backButtonSelected = UIImage.imageNamed('nav-backbutton.png').stretchableImageWithLeftCapWidth(14, topCapHeight:0)
+    backButtonNormal = UIImage.imageNamed('navbar_images/button_back.png').stretchableImageWithLeftCapWidth(17, topCapHeight:0)
+    backButtonSelected = UIImage.imageNamed('navbar_images/button_back.png').stretchableImageWithLeftCapWidth(17, topCapHeight:0)
 
     # Style the tabBar item
 
