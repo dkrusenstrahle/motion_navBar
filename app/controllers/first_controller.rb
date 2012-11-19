@@ -15,8 +15,9 @@ class FirstController < UIViewController
 
     self.title = "First"
 
-    # Create images
+    # Create images and set default font
 
+    defaultFont = UIFont.fontWithName('Futura-Medium', size:13)
     buttonNormal = UIImage.imageNamed('navbar_images/button.png')
     buttonSelected = UIImage.imageNamed('navbar_images/button.png')
     backgroundBody = UIImage.imageNamed('body/background_body.png')
@@ -34,6 +35,7 @@ class FirstController < UIViewController
     button.action = 'performAdd'
     button.setBackgroundImage(buttonNormal, forState:UIControlStateNormal, barMetrics:UIBarMetricsDefault)
     button.setBackgroundImage(buttonSelected, forState:UIControlStateHighlighted, barMetrics:UIBarMetricsDefault)
+    button.setTitleTextAttributes({UITextAttributeFont => defaultFont}, forState:UIControlStateNormal)
 
     # Add button to navigation controller
 
